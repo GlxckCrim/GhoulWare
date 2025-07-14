@@ -1,20 +1,7 @@
-local supportedGames = {
-    [4588604953] = "https://raw.githubusercontent.com/GlxckCrim/GhoulWare/refs/heads/main/Criminality",
-    [537413528] = "https://raw.githubusercontent.com/GlxckCrim/GhoulWare/refs/heads/main/Babft"
-}
-
-local placeId = game.PlaceId
-local url = supportedGames[placeId]
-
-if url then
-    local success, err = pcall(function()
-        local scriptSource = game:HttpGet(url)
-        local func = loadstring(scriptSource)
-        func()
-    end)
-    if not success then
-        warn("Script error:", err)
-    end
+if game.PlaceId == 4588604953 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GlxckCrim/GhoulWare/refs/heads/main/Criminality"))()
+elseif game.PlaceId == 537413528 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GlxckCrim/GhoulWare/refs/heads/main/Babft"))()
 else
     game:GetService("Players").LocalPlayer:Kick("Game Not Supported")
 end
