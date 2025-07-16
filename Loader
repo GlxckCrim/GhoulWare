@@ -1,4 +1,4 @@
-if game.PlaceId == 4588604953 then
+if game.GameId == "e4b59cc0-925b-4a0a-a271-4c9eb5f2a1cb" then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GlxckCrim/GhoulWare/refs/heads/main/Criminality"))()
 elseif game.PlaceId == 537413528 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GlxckCrim/GhoulWare/refs/heads/main/Babft"))()
