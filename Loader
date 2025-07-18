@@ -2,10 +2,7 @@
 if table.find({
     4588604953,  -- Lobby
     9551640993,  -- Standard
-    8224601006,  -- Casual
-    13145997078, -- Infection
-    13937620714, -- Hitman
-    6869603280   -- Tutorial
+    8343259840,  -- Casual
 }, game.PlaceId) then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GlxckCrim/GhoulWare/refs/heads/main/Criminality"))()
 elseif game.PlaceId == 537413528 then
